@@ -5,7 +5,7 @@ const {
   createUser,
   updateUserRole,
   getUserProfile,
-} = require("../controllers/UserController");
+} = require("../controllers/userController");
 
 router.post("/users", createUser);
 router.patch("/users/:userId", updateUserRole);
