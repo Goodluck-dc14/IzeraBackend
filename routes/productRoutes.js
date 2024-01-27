@@ -5,7 +5,7 @@ const upload = require("../middleware/uploadMiddleware");
 const {
   createProduct,
   getProductDetails,
-} = require("../controllers/ProductController");
+} = require("../controllers/productController");
 
 router.route("/products/:userId").post(upload.single("image"), createProduct);
 
